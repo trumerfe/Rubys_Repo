@@ -1,7 +1,7 @@
 <?xml-model href="DraculaSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <title>D R A C U L A</title>
-    <body><heading n="1">CHAPTER I</heading>
+    <body><heading n="1">CHAPTER I</heading> <!-- added numbered headings, note element with a type, title of the work and the first signature of jonathan harker -->
 
     <journalAuth>JONATHAN HARKER’S JOURNAL</journalAuth>
     <note type="clarification">(Kept in shorthand.)</note>
