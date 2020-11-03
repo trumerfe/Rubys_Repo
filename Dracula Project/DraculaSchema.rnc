@@ -1,0 +1,10 @@
+start = xml
+xml = element xml {title, body}
+title = element title {text}
+body = element body {mixed{(heading | p | journalAuth | note)*}}
+heading = element heading {n, text}
+n = attribute n {xsd:int}
+p = element p {text}
+journalAuth = element journalAuth {text}
+note = element note {type, text}
+type = attribute type {text}
