@@ -1,0 +1,18 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = xml
+xml = element xml {title, header, p+, metadata}
+
+title = element title {mixed{(discipline | text)*}}
+discipline = element discipline {text}
+
+header = element header {mixed{(location | text)*}}
+location = element location {build, country, type}
+build = attribute build {"shrine", "building"}
+country = attribute country {"japan"}
+type = attribute type {"landmar", "region", "country", "building", "region"}
+
+P = element p {mixed {(nature | location | tree | material | people | time | measurement)*}}
+nature = element nature {plant | type | place | text}
+plant = attribute plant {"tree"}
+type = attribute type {}
